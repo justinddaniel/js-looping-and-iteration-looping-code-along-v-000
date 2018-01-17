@@ -6,3 +6,15 @@ function printBadges (names) {
 
   return names;
 }
+
+function coinFlip () {
+  return Math.random() >= 0.5;
+}
+
+function tailsNeverFails () {
+  let i = 0;
+  while (coinFlip()) {
+    i++;
+  }
+  return `You got ${i} tails in a row!`;
+}
